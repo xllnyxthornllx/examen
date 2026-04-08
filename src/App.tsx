@@ -1,6 +1,14 @@
-import React, { useState } from 'react';
-import { questions, Question } from './PRPData';
-import { CheckCircle2, XCircle, ChevronRight, RotateCcw, GraduationCap } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { questions } from './PRPData';
+import { 
+  CheckCircle2, 
+  XCircle, 
+  ChevronRight, 
+  RotateCcw, 
+  GraduationCap, 
+  Moon, 
+  Sun 
+} from 'lucide-react';
 
 const App: React.FC = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -8,6 +16,15 @@ const App: React.FC = () => {
   const [isAnswered, setIsAnswered] = useState(false);
   const [score, setScore] = useState(0);
   const [showResults, setShowResults] = useState(false);
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+  };
 
   const currentQuestion = questions[currentQuestionIndex];
 
@@ -45,22 +62,25 @@ const App: React.FC = () => {
     return (
       <div className="app-container">
         <header>
-          <GraduationCap size={48} color="#3498db" />
-          <h1>Study Complete</h1>
-          <p>Review your results and solidify your knowledge of Platelet-Rich Plasma.</p>
+          <button className="theme-toggle" onClick={toggleTheme} title="Cambiar tema">
+            {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
+          <GraduationCap size={64} color="var(--accent-color)" style={{ marginBottom: '1rem' }} />
+          <h1>Estudio Completado</h1>
+          <p>Revisa tus resultados y consolida tus conocimientos sobre PRP.</p>
         </header>
 
         <div className="card results-card">
-          <h2>Your Score</h2>
+          <h2>Tu Puntuación</h2>
           <div className="score-display">{score} / {questions.length}</div>
-          <p style={{ marginBottom: '20px' }}>
-            {score > 35 ? "Excellent! You have a deep understanding of PRP protocols." : 
-             score > 25 ? "Great job! You've mastered most of the essential concepts." :
-             "Good effort. We recommend reviewing the technical explanations to strengthen your foundation."}
+          <p style={{ marginBottom: '30px', fontSize: '1.1rem', color: 'var(--text-secondary)' }}>
+            {score > 35 ? "¡Excelente! Tienes un dominio profundo de los protocolos de PRP." : 
+             score > 25 ? "¡Buen trabajo! Has dominado la mayoría de los conceptos esenciales." :
+             "Buen esfuerzo. Te recomendamos revisar las explicaciones técnicas para fortalecer tus bases."}
           </p>
           <button className="restart-button" onClick={resetQuiz}>
-            <RotateCcw size={18} style={{ verticalAlign: 'middle', marginRight: '8px' }} />
-            Restart Study Session
+            <RotateCcw size={20} />
+            Reiniciar Sesión de Estudio
           </button>
         </div>
       </div>
@@ -70,8 +90,11 @@ const App: React.FC = () => {
   return (
     <div className="app-container">
       <header>
-        <h1>PRP Study Platform</h1>
-        <p>Master the Science of Autologous Tissue Regeneration</p>
+        <button className="theme-toggle" onClick={toggleTheme} title="Cambiar tema">
+          {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+        </button>
+        <h1>Plataforma PRP</h1>
+        <p>Domina la Ciencia de la Regeneración Tisular Autóloga</p>
       </header>
 
       <div className="quiz-progress">
@@ -82,9 +105,11 @@ const App: React.FC = () => {
       </div>
 
       <div className="card">
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '10px', color: '#7f8c8d', fontSize: '0.9rem' }}>
-          <span>Question {currentQuestionIndex + 1} of {questions.length}</span>
-          <span>{currentQuestion.type === 'multiple-choice' ? 'Multiple Choice' : 'True/False'}</span>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '16px', color: 'var(--text-secondary)', fontSize: '0.9rem', fontWeight: '600' }}>
+          <span>PREGUNTA {currentQuestionIndex + 1} DE {questions.length}</span>
+          <span style={{ textTransform: 'uppercase' }}>
+            {currentQuestion.type === 'multiple-choice' ? 'Opción Múltiple' : 'Verdadero / Falso'}
+          </span>
         </div>
 
         <h3 className="question-text">{currentQuestion.question}</h3>
@@ -104,15 +129,15 @@ const App: React.FC = () => {
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span>{option}</span>
-                    {isCorrect && <CheckCircle2 size={18} color="#27ae60" />}
-                    {isWrong && <XCircle size={18} color="#c0392b" />}
+                    {isCorrect && <CheckCircle2 size={20} />}
+                    {isWrong && <XCircle size={20} />}
                   </div>
                 </button>
               );
             })
           ) : (
             [true, false].map((val) => {
-              const optionLabel = val ? "True" : "False";
+              const optionLabel = val ? "Verdadero" : "Falso";
               const isCorrect = isAnswered && val === currentQuestion.correctAnswer;
               const isWrong = isAnswered && selectedAnswer === val && val !== currentQuestion.correctAnswer;
 
@@ -125,8 +150,8 @@ const App: React.FC = () => {
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                     <span>{optionLabel}</span>
-                    {isCorrect && <CheckCircle2 size={18} color="#27ae60" />}
-                    {isWrong && <XCircle size={18} color="#c0392b" />}
+                    {isCorrect && <CheckCircle2 size={20} />}
+                    {isWrong && <XCircle size={20} />}
                   </div>
                 </button>
               );
@@ -136,7 +161,7 @@ const App: React.FC = () => {
 
         {isAnswered && (
           <div className="explanation-box">
-            <h4>Clinical Insight</h4>
+            <h4>Información Clínica</h4>
             <p>{currentQuestion.explanation}</p>
           </div>
         )}
@@ -146,8 +171,8 @@ const App: React.FC = () => {
           onClick={handleNextQuestion}
           disabled={!isAnswered}
         >
-          {currentQuestionIndex === questions.length - 1 ? "Finish Session" : "Next Question"}
-          <ChevronRight size={18} style={{ verticalAlign: 'middle', marginLeft: '8px' }} />
+          {currentQuestionIndex === questions.length - 1 ? "Finalizar Sesión" : "Siguiente Pregunta"}
+          <ChevronRight size={20} />
         </button>
       </div>
     </div>

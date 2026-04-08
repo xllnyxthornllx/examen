@@ -8,307 +8,307 @@ export interface Question {
 }
 
 export const questions: Question[] = [
-  // Multiple Choice Questions (20)
+  // Preguntas de Opción Múltiple (20)
   {
     id: 1,
     type: 'multiple-choice',
-    question: "What is the biological definition of Platelet-Rich Plasma (PRP)?",
-    options: ["A synthetic growth factor serum", "An autologous concentration of platelets in a small volume of plasma", "A mixture of vitamins and minerals", "A type of stem cell therapy"],
-    correctAnswer: "An autologous concentration of platelets in a small volume of plasma",
-    explanation: "PRP is defined as an autologous (derived from the patient's own body) volume of plasma that has a platelet concentration above baseline levels. It leverages the body's innate regenerative capacity."
+    question: "¿Cuál es la definición biológica del Plasma Rico en Plaquetas (PRP)?",
+    options: ["Un suero de factor de crecimiento sintético", "Una concentración autóloga de plaquetas en un pequeño volumen de plasma", "Una mezcla de vitaminas y minerales", "Un tipo de terapia con células madre"],
+    correctAnswer: "Una concentración autóloga de plaquetas en un pequeño volumen de plasma",
+    explanation: "El PRP se define como un volumen autólogo (derivado del propio cuerpo del paciente) de plasma que tiene una concentración de plaquetas por encima de los niveles basales. Aprovecha la capacidad regenerativa innata del cuerpo."
   },
   {
     id: 2,
     type: 'multiple-choice',
-    question: "What is the primary physiological function of platelets within the context of PRP therapy?",
-    options: ["Oxygen transport", "Immune defense against bacteria", "Release of alpha-granules containing growth factors", "Regulation of blood glucose"],
-    correctAnswer: "Release of alpha-granules containing growth factors",
-    explanation: "Platelets contain alpha-granules that, upon activation, release essential growth factors (like PDGF, TGF-β, and IGF) which initiate the tissue repair cascade and cellular proliferation."
+    question: "¿Cuál es la función fisiológica principal de las plaquetas en el contexto de la terapia con PRP?",
+    options: ["Transporte de oxígeno", "Defensa inmunológica contra bacterias", "Liberación de gránulos alfa que contienen factores de crecimiento", "Regulación de la glucosa en sangre"],
+    correctAnswer: "Liberación de gránulos alfa que contienen factores de crecimiento",
+    explanation: "Las plaquetas contienen gránulos alfa que, al activarse, liberan factores de crecimiento esenciales (como PDGF, TGF-β e IGF) que inician la cascada de reparación tisular y la proliferación celular."
   },
   {
     id: 3,
     type: 'multiple-choice',
-    question: "What is the specific role of Vascular Endothelial Growth Factor (VEGF) in tissue regeneration?",
-    options: ["Decreasing inflammation", "Stimulating angiogenesis (new blood vessel formation)", "Reducing melanin production", "Paralyzing facial muscles"],
-    correctAnswer: "Stimulating angiogenesis (new blood vessel formation)",
-    explanation: "VEGF is a potent signaling protein that promotes angiogenesis. This process increases blood supply to the treated area, ensuring better oxygenation and nutrient delivery for healing."
+    question: "¿Cuál es el papel específico del Factor de Crecimiento del Endotelio Vascular (VEGF) en la regeneración de tejidos?",
+    options: ["Disminuir la inflamación", "Estimular la angiogénesis (formación de nuevos vasos sanguíneos)", "Reducir la producción de melanina", "Paralizar los músculos faciales"],
+    correctAnswer: "Estimular la angiogénesis (formación de nuevos vasos sanguíneos)",
+    explanation: "El VEGF es una potente proteína de señalización que promueve la angiogénesis. Este proceso aumenta el suministro de sangre al área tratada, asegurando una mejor oxigenación y entrega de nutrientes para la curación."
   },
   {
     id: 4,
     type: 'multiple-choice',
-    question: "Which of these is a significant non-aesthetic therapeutic application of PRP?",
-    options: ["Treatment of chronic migraines", "Orthopedic repair of tendons and ligaments", "Weight loss management", "Management of Type 1 Diabetes"],
-    correctAnswer: "Orthopedic repair of tendons and ligaments",
-    explanation: "Beyond aesthetics, PRP is extensively used in sports medicine and orthopedics to accelerate the healing of musculoskeletal injuries by concentrating growth factors at the site of injury."
+    question: "¿Cuál de estas es una aplicación terapéutica no estética significativa del PRP?",
+    options: ["Tratamiento de migrañas crónicas", "Reparación ortopédica de tendones y ligamentos", "Manejo de la pérdida de peso", "Manejo de la Diabetes Tipo 1"],
+    correctAnswer: "Reparación ortopédica de tendones y ligamentos",
+    explanation: "Más allá de la estética, el PRP se utiliza ampliamente en medicina deportiva y ortopedia para acelerar la curación de lesiones musculoesqueléticas al concentrar factores de crecimiento en el sitio de la lesión."
   },
   {
     id: 5,
     type: 'multiple-choice',
-    question: "PRP is classified as what type of treatment based on its source?",
-    options: ["Allogeneic", "Xenogeneic", "Autologous", "Synthetic"],
-    correctAnswer: "Autologous",
-    explanation: "PRP is an autologous treatment, meaning the donor and the recipient are the same individual. This eliminates the risk of immune rejection or transmission of infectious diseases."
+    question: "¿Cómo se clasifica el PRP según su origen?",
+    options: ["Alogénico", "Xenogénico", "Autólogo", "Sintético"],
+    correctAnswer: "Autólogo",
+    explanation: "El PRP es un tratamiento autólogo, lo que significa que el donante y el receptor son el mismo individuo. Esto elimina el riesgo de rechazo inmunológico o transmisión de enfermedades infecciosas."
   },
   {
     id: 6,
     type: 'multiple-choice',
-    question: "After centrifugation, which component typically forms the bottom layer due to its higher density?",
-    options: ["Platelets", "Leukocytes (WBCs)", "Erythrocytes (RBCs)", "Plasma"],
-    correctAnswer: "Erythrocytes (RBCs)",
-    explanation: "Erythrocytes (Red Blood Cells) are the densest component of whole blood. During centrifugation, centrifugal force drives them to the bottom of the tube."
+    question: "Después de la centrifugación, ¿qué componente forma típicamente la capa inferior debido a su mayor densidad?",
+    options: ["Plaquetas", "Leucocitos (Glóbulos Blancos)", "Eritrocitos (Glóbulos Rojos)", "Plasma"],
+    correctAnswer: "Eritrocitos (Glóbulos Rojos)",
+    explanation: "Los eritrocitos (glóbulos rojos) son el componente más denso de la sangre total. Durante la centrifugación, la fuerza centrífuga los desplaza hacia el fondo del tubo."
   },
   {
     id: 7,
     type: 'multiple-choice',
-    question: "Which of the following is considered an absolute contraindication for PRP treatment?",
-    options: ["Mild hypertension", "Pregnancy and lactation", "Vitamin C deficiency", "Localized acne"],
-    correctAnswer: "Pregnancy and lactation",
-    explanation: "Pregnancy and lactation are absolute contraindications. While PRP is autologous, the physiological changes during these periods and the lack of clinical safety studies justify excluding these patients."
+    question: "¿Cuál de las siguientes se considera una contraindicación absoluta para el tratamiento con PRP?",
+    options: ["Hipertensión leve", "Embarazo y lactancia", "Deficiencia de Vitamina C", "Acné localizado"],
+    correctAnswer: "Embarazo y lactancia",
+    explanation: "El embarazo y la lactancia son contraindicaciones absolutas. Aunque el PRP es autólogo, los cambios fisiológicos durante estos periodos y la falta de estudios de seguridad clínica justifican la exclusión de estas pacientes."
   },
   {
     id: 8,
     type: 'multiple-choice',
-    question: "For a standard skin rejuvenation protocol, what is the recommended number of initial sessions?",
-    options: ["1 session per year", "3 to 4 sessions spaced 3-4 weeks apart", "10 sessions daily", "Weekly sessions indefinitely"],
-    correctAnswer: "3 to 4 sessions spaced 3-4 weeks apart",
-    explanation: "A standard induction phase typically consists of 3-4 sessions. This allows the biological remodeling process to build upon each session for cumulative results."
+    question: "Para un protocolo estándar de rejuvenecimiento de la piel, ¿cuál es el número recomendado de sesiones iniciales?",
+    options: ["1 sesión al año", "3 a 4 sesiones con un intervalo de 3-4 semanas", "10 sesiones diarias", "Sesiones semanales indefinidamente"],
+    correctAnswer: "3 a 4 sesiones con un intervalo de 3-4 semanas",
+    explanation: "Una fase de inducción estándar suele constar de 3-4 sesiones. Esto permite que el proceso de remodelación biológica se base en cada sesión para obtener resultados acumulativos."
   },
   {
     id: 9,
     type: 'multiple-choice',
-    question: "What is a common, expected immediate post-procedural reaction?",
-    options: ["Permanent scarring", "Immediate disappearance of all wrinkles", "Transient erythema and mild edema", "Severe allergic shock"],
-    correctAnswer: "Transient erythema and mild edema",
-    explanation: "Erythema (redness) and edema (swelling) are transient and expected inflammatory responses to the micro-injections and the biological activity of the PRP."
+    question: "¿Cuál es una reacción inmediata común y esperada después del procedimiento?",
+    options: ["Cicatrización permanente", "Desaparición inmediata de todas las arrugas", "Eritema transitorio y edema leve", "Choque alérgico severo"],
+    correctAnswer: "Eritema transitorio y edema leve",
+    explanation: "El eritema (enrojecimiento) y el edema (hinchazón) son respuestas inflamatorias transitorias y esperadas ante las microinyecciones y la actividad biológica del PRP."
   },
   {
     id: 10,
     type: 'multiple-choice',
-    question: "What is an essential post-treatment care instruction for a patient after facial PRP?",
-    options: ["Intense sun exposure to activate the plasma", "Rigorous sun protection and hydration", "Immediate application of heavy makeup", "Exfoliating the skin with acid peels"],
-    correctAnswer: "Rigorous sun protection and hydration",
-    explanation: "Sun protection is crucial to prevent post-inflammatory hyperpigmentation (PIH), as the skin is temporarily more sensitive following the procedure."
+    question: "¿Cuál es una instrucción esencial de cuidado post-tratamiento para un paciente después de un PRP facial?",
+    options: ["Exposición solar intensa para activar el plasma", "Protección solar rigurosa e hidratación", "Aplicación inmediata de maquillaje pesado", "Exfoliación de la piel con peelings ácidos"],
+    correctAnswer: "Protección solar rigurosa e hidratación",
+    explanation: "La protección solar es crucial para prevenir la hiperpigmentación post-inflamatoria (PIH), ya que la piel está temporalmente más sensible después del procedimiento."
   },
   {
     id: 11,
     type: 'multiple-choice',
-    question: "What is the primary objective of the centrifugation process in PRP preparation?",
-    options: ["To heat the blood to body temperature", "To separate blood components based on their different densities", "To kill any bacteria in the sample", "To mix the blood with oxygen"],
-    correctAnswer: "To separate blood components based on their different densities",
-    explanation: "Centrifugation uses centrifugal force to sediment blood components at different rates according to their density, allowing for the isolation of the platelet-rich fraction."
+    question: "¿Cuál es el objetivo principal del proceso de centrifugación en la preparación del PRP?",
+    options: ["Calentar la sangre a temperatura corporal", "Separar los componentes sanguíneos según sus diferentes densidades", "Matar cualquier bacteria en la muestra", "Mezclar la sangre con oxígeno"],
+    correctAnswer: "Separar los componentes sanguíneos según sus diferentes densidades",
+    explanation: "La centrifugación utiliza la fuerza centrífuga para sedimentar los componentes sanguíneos a diferentes velocidades según su densidad, lo que permite el aislamiento de la fracción rica en plaquetas."
   },
   {
     id: 12,
     type: 'multiple-choice',
-    question: "Which type of vacuum tube is most commonly used for PRP collection?",
-    options: ["Red cap (No additive)", "Blue cap (Sodium Citrate)", "Grey cap (Sodium Fluoride)", "Purple cap (EDTA)"],
-    correctAnswer: "Blue cap (Sodium Citrate)",
-    explanation: "Sodium Citrate acts as a reversible anticoagulant by chelating calcium. It is preferred for PRP because it preserves platelet integrity and morphology better than other additives."
+    question: "¿Qué tipo de tubo al vacío se utiliza más comúnmente para la recolección de PRP?",
+    options: ["Tapa roja (Sin aditivo)", "Tapa azul (Citrato de Sodio)", "Tapa gris (Fluoruro de Sodio)", "Tapa morada (EDTA)"],
+    correctAnswer: "Tapa azul (Citrato de Sodio)",
+    explanation: "El citrato de sodio actúa como un anticoagulante reversible mediante la quelación del calcio. Se prefiere para el PRP porque preserva mejor la integridad y morfología plaquetaria que otros aditivos."
   },
   {
     id: 13,
     type: 'multiple-choice',
-    question: "What is the 'Buffy Coat' in a centrifuged blood sample?",
-    options: ["The layer of pure red blood cells", "The thin layer containing leukocytes and platelets", "The topmost layer of clear plasma", "The clot at the bottom"],
-    correctAnswer: "The thin layer containing leukocytes and platelets",
-    explanation: "The Buffy Coat is the intermediate layer between the plasma and the erythrocytes. It contains the highest concentration of platelets and white blood cells (leukocytes)."
+    question: "¿Qué es la 'Capa Leucocitaria' (Buffy Coat) en una muestra de sangre centrifugada?",
+    options: ["La capa de glóbulos rojos puros", "La fina capa que contiene leucocitos y plaquetas", "La capa superior de plasma transparente", "El coágulo en el fondo"],
+    correctAnswer: "La fina capa que contiene leucocitos y plaquetas",
+    explanation: "La capa leucocitaria es la capa intermedia entre el plasma y los eritrocitos. Contiene la mayor concentración de plaquetas y glóbulos blancos (leucocitos)."
   },
   {
     id: 14,
     type: 'multiple-choice',
-    question: "If a blood sample coagulates inside the tube before centrifugation, what is the status of the sample?",
-    options: ["Ideal for high-quality PRP", "Can be used after vigorous shaking", "Inutile (Invalid for PRP preparation)", "It becomes a stem cell concentrate"],
-    correctAnswer: "Inutile (Invalid for PRP preparation)",
-    explanation: "Coagulation traps platelets within a fibrin mesh, making it impossible to separate and concentrate them into plasma. The sample must be discarded."
+    question: "Si una muestra de sangre se coagula dentro del tubo antes de la centrifugación, ¿cuál es el estado de la muestra?",
+    options: ["Ideal para PRP de alta calidad", "Se puede usar después de agitar vigorosamente", "Inútil (Inválida para la preparación de PRP)", "Se convierte en un concentrado de células madre"],
+    correctAnswer: "Inútil (Inválida para la preparación de PRP)",
+    explanation: "La coagulación atrapa las plaquetas dentro de una red de fibrina, lo que hace imposible separarlas y concentrarlas en el plasma. La muestra debe ser descartada."
   },
   {
     id: 15,
     type: 'multiple-choice',
-    question: "Which fraction of the centrifuged sample is utilized for PRP treatment?",
-    options: ["The bottom red sediment", "The top translucent/yellowish plasma layer (enriched)", "The air at the top of the tube", "The glass of the tube"],
-    correctAnswer: "The top translucent/yellowish plasma layer (enriched)",
-    explanation: "The plasma layer (specifically the portion just above the buffy coat) contains the concentrated platelets and is the therapeutic fraction used for injection."
+    question: "¿Qué fracción de la muestra centrifugada se utiliza para el tratamiento con PRP?",
+    options: ["El sedimento rojo del fondo", "La capa de plasma translúcida/amarillenta superior (enriquecida)", "El aire en la parte superior del tubo", "El vidrio del tubo"],
+    correctAnswer: "La capa de plasma translúcida/amarillenta superior (enriquecida)",
+    explanation: "La capa de plasma (specifically la porción justo por encima de la capa leucocitaria) contiene las plaquetas concentradas y es la fracción terapéutica utilizada para la inyección."
   },
   {
     id: 16,
     type: 'multiple-choice',
-    question: "What is the primary difference between PRP and PPP (Platelet-Poor Plasma)?",
-    options: ["PPP has more red blood cells", "PRP has a significantly higher platelet concentration", "PPP is synthetic", "There is no difference"],
-    correctAnswer: "PRP has a significantly higher platelet concentration",
-    explanation: "PRP (Platelet-Rich) is the fraction with concentrated platelets, while PPP (Platelet-Poor) is the remaining plasma with very few platelets, often discarded or used as a secondary treatment."
+    question: "¿Cuál es la diferencia principal entre el PRP y el PPP (Plasma Pobre en Plaquetas)?",
+    options: ["El PPP tiene más glóbulos rojos", "El PRP tiene una concentración de plaquetas significativamente mayor", "El PPP es sintético", "No hay diferencia"],
+    correctAnswer: "El PRP tiene una concentración de plaquetas significativamente mayor",
+    explanation: "El PRP (Rico en Plaquetas) es la fracción con plaquetas concentradas, mientras que el PPP (Pobre en Plaquetas) es el plasma restante con muy pocas plaquetas, a menudo descartado o usado como tratamiento secundario."
   },
   {
     id: 17,
     type: 'multiple-choice',
-    question: "Which factor negatively impacts the quality of PRP by releasing unwanted intracellular contents?",
-    options: ["Oxygenation", "Hemolysis (rupture of red blood cells)", "Refrigeration", "Sterilization"],
-    correctAnswer: "Hemolysis (rupture of red blood cells)",
-    explanation: "Hemolysis occurs when red blood cells rupture, releasing hemoglobin and other contents that can cause increased inflammation and oxidative stress, compromising the PRP quality."
+    question: "¿Qué factor afecta negativamente la calidad del PRP al liberar contenidos intracelulares no deseados?",
+    options: ["Oxigenación", "Hemólisis (ruptura de glóbulos rojos)", "Refrigeración", "Esterilización"],
+    correctAnswer: "Hemólisis (ruptura de glóbulos rojos)",
+    explanation: "La hemólisis ocurre cuando los glóbulos rojos se rompen, liberando hemoglobina y otros contenidos que pueden causar un aumento de la inflamación y el estrés oxidativo, comprometiendo la calidad del PRP."
   },
   {
     id: 18,
     type: 'multiple-choice',
-    question: "Which biosecurity principle is fundamental during PRP preparation?",
-    options: ["Reusing needles after washing", "Maintaining a strictly sterile and single-use environment", "Performing the procedure in a public area", "Mixing samples from different patients"],
-    correctAnswer: "Maintaining a strictly sterile and single-use environment",
-    explanation: "Strict asepsis and the use of sterile, single-use materials are mandatory to prevent iatrogenic infections and ensure patient safety."
+    question: "¿Qué principio de bioseguridad es fundamental durante la preparación del PRP?",
+    options: ["Reutilizar agujas después de lavarlas", "Mantener un entorno estrictamente estéril y de un solo uso", "Realizar el procedimiento en un área pública", "Mezclar muestras de diferentes pacientes"],
+    correctAnswer: "Mantener un entorno estrictamente estéril y de un solo uso",
+    explanation: "La asepsia estricta y el uso de materiales estériles y desechables son obligatorios para prevenir infecciones iatrogénicas y garantizar la seguridad del paciente."
   },
   {
     id: 19,
     type: 'multiple-choice',
-    question: "What is a potential complication of including excessive Erythrocytes (RBCs) in the PRP injection?",
-    options: ["Enhanced healing", "Increased pro-inflammatory response and pain", "Better skin color", "No effect"],
-    correctAnswer: "Increased pro-inflammatory response and pain",
-    explanation: "Excessive red blood cells in PRP can trigger an unwanted inflammatory response, leading to increased pain, swelling, and potentially suboptimal regenerative results."
+    question: "¿Cuál es una complicación potencial de incluir eritrocitos (RBC) excesivos en la inyección de PRP?",
+    options: ["Mejoría en la curación", "Aumento de la respuesta pro-inflamatoria y el dolor", "Mejor color de piel", "Ningún efecto"],
+    correctAnswer: "Aumento de la respuesta pro-inflamatoria y el dolor",
+    explanation: "El exceso de glóbulos rojos en el PRP puede desencadenar una respuesta inflamatoria no deseada, lo que provoca un aumento del dolor, la hinchazón y, potencialmente, resultados regenerativos subóptimos."
   },
   {
     id: 20,
     type: 'multiple-choice',
-    question: "What signal indicates an error in the centrifugation or collection process?",
-    options: ["Golden yellow plasma", "Visible red clumps or a pinkish tint in the plasma (hemolysis)", "Clear separation of layers", "Transparent liquid"],
-    correctAnswer: "Visible red clumps or a pinkish tint in the plasma (hemolysis)",
-    explanation: "A pinkish tint (hemolysis) or red clumps indicate that erythrocytes have mixed with the plasma or ruptured, signaling an technical error that affects sample purity."
+    question: "¿Qué señal indica un error en el proceso de centrifugación o recolección?",
+    options: ["Plasma amarillo dorado", "Grumos rojos visibles o un tinte rosado en el plasma (hemólisis)", "Separación clara de capas", "Líquido transparente"],
+    correctAnswer: "Grumos rojos visibles o un tinte rosado en el plasma (hemólisis)",
+    explanation: "Un tinte rosado (hemólisis) o grumos rojos indican que los eritrocitos se han mezclado con el plasma o se han roto, lo que indica un error técnico que afecta la pureza de la muestra."
   },
 
-  // True/False Questions (20)
+  // Preguntas de Verdadero/Falso (20)
   {
     id: 21,
     type: 'true-false',
-    question: "PRP is a synthetic pharmacological product developed in a laboratory.",
+    question: "El PRP es un producto farmacológico sintético desarrollado en un laboratorio.",
     correctAnswer: false,
-    explanation: "False. PRP is an autologous biological product, meaning it is derived from the patient's own blood and is not a synthetic drug."
+    explanation: "Falso. El PRP es un producto biológico autólogo, lo que significa que se deriva de la propia sangre del paciente y no es un fármaco sintético."
   },
   {
     id: 22,
     type: 'true-false',
-    question: "After centrifugation, the denser red blood cells settle at the bottom while the plasma stays at the top.",
+    question: "Después de la centrifugación, los glóbulos rojos más densos se asientan en el fondo mientras el plasma permanece en la parte superior.",
     correctAnswer: true,
-    explanation: "True. Centrifugation separates components based on density; erythrocytes (RBCs) are the heaviest and sediment at the base."
+    explanation: "Verdadero. La centrifugación separa los componentes según la densidad; los eritrocitos (RBC) son los más pesados y se sedimentan en la base."
   },
   {
     id: 23,
     type: 'true-false',
-    question: "PRP growth factors stimulate fibroblasts to produce collagen and elastin.",
+    question: "Los factores de crecimiento del PRP estimulan a los fibroblastos para producir colágeno y elastina.",
     correctAnswer: true,
-    explanation: "True. One of the main mechanisms of PRP is the activation of fibroblasts, the cells responsible for synthesizing the extracellular matrix and collagen."
+    explanation: "Verdadero. Uno de los mecanismos principales del PRP es la activación de los fibroblastos, las células responsables de sintetizar la matriz extracelular y el colágeno."
   },
   {
     id: 24,
     type: 'true-false',
-    question: "PRP is primarily used as a treatment for significant localized fat reduction (lipolysis).",
+    question: "El PRP se utiliza principalmente como tratamiento para la reducción significativa de grasa localizada (lipólisis).",
     correctAnswer: false,
-    explanation: "False. PRP is a regenerative treatment for tissue repair and collagen induction; it does not have lipolytic properties for fat reduction."
+    explanation: "Falso. El PRP es un tratamiento regenerativo para la reparación de tejidos y la inducción de colágeno; no tiene propiedades lipolíticas para la reducción de grasa."
   },
   {
     id: 25,
     type: 'true-false',
-    question: "PRP can be used to stimulate dormant hair follicles in certain types of alopecia.",
+    question: "El PRP se puede utilizar para estimular folículos pilosos inactivos en ciertos tipos de alopecia.",
     correctAnswer: true,
-    explanation: "True. Growth factors in PRP promote hair follicle survival and stimulate the anagen (growth) phase of the hair cycle."
+    explanation: "Verdadero. Los factores de crecimiento en el PRP promueven la supervivencia del folículo piloso y estimulan la fase anágena (crecimiento) del ciclo capilar."
   },
   {
     id: 26,
     type: 'true-false',
-    question: "Active pregnancy and lactation are considered contraindications for PRP therapy.",
+    question: "El embarazo activo y la lactancia se consideran contraindicaciones para la terapia con PRP.",
     correctAnswer: true,
-    explanation: "True. Due to hormonal shifts and a lack of safety data in these populations, PRP is generally avoided during pregnancy and breastfeeding."
+    explanation: "Verdadero. Debido a los cambios hormonales y la falta de datos de seguridad en estas poblaciones, el PRP generalmente se evita durante el embarazo y la lactancia."
   },
   {
     id: 27,
     type: 'true-false',
-    question: "A single PRP session provides immediate and permanent removal of deep wrinkles.",
+    question: "Una sola sesión de PRP proporciona la eliminación inmediata y permanente de las arrugas profundas.",
     correctAnswer: false,
-    explanation: "False. PRP results are progressive and biological; they require multiple sessions and time for collagen remodeling to occur."
+    explanation: "Falso. Los resultados del PRP son progresivos y biológicos; requieren múltiples sesiones y tiempo para que ocurra la remodelación del colágeno."
   },
   {
     id: 28,
     type: 'true-false',
-    question: "Because PRP is autologous, the risk of allergic rejection is virtually non-existent.",
+    question: "Debido a que el PRP es autólogo, el riesgo de rechazo alérgico es virtualmente inexistente.",
     correctAnswer: true,
-    explanation: "True. Since the material comes from the patient's own body, the immune system recognizes it as 'self,' eliminating the risk of rejection."
+    explanation: "Verdadero. Dado que el material proviene del propio cuerpo del paciente, el sistema inmunológico lo reconoce como propio, eliminando el riesgo de rechazo."
   },
   {
     id: 29,
     type: 'true-false',
-    question: "PRP should only be used as a standalone treatment and never combined with other techniques like microneedling.",
+    question: "El PRP solo debe usarse como tratamiento independiente y nunca combinarse con otras técnicas como el microneedling.",
     correctAnswer: false,
-    explanation: "False. PRP is often combined with microneedling (induction therapy) or lasers to enhance results through synergistic effects."
+    explanation: "Falso. El PRP a menudo se combina con microneedling (terapia de inducción) o láseres para mejorar los resultados mediante efectos sinérgicos."
   },
   {
     id: 30,
     type: 'true-false',
-    question: "Direct sun exposure immediately after a PRP session is recommended to enhance the effect.",
+    question: "Se recomienda la exposición directa al sol inmediatamente después de una sesión de PRP para mejorar el efecto.",
     correctAnswer: false,
-    explanation: "False. Patients must avoid sun exposure to prevent inflammation and post-inflammatory hyperpigmentation (PIH) in the treated areas."
+    explanation: "Falso. Los pacientes deben evitar la exposición al sol para prevenir la inflamación y la hiperpigmentación post-inflamatoria (PIH) en las áreas tratadas."
   },
   {
     id: 31,
     type: 'true-false',
-    question: "Hemolysis in the plasma sample can lead to increased inflammation after injection.",
+    question: "La hemólisis en la muestra de plasma puede provocar un aumento de la inflamación después de la inyección.",
     correctAnswer: true,
-    explanation: "True. Hemolysis releases pro-inflammatory mediators from red blood cells that can increase pain and irritation at the injection site."
+    explanation: "Verdadero. La hemólisis libera mediadores pro-inflamatorios de los glóbulos rojos que pueden aumentar el dolor e irritación en el sitio de inyección."
   },
   {
     id: 32,
     type: 'true-false',
-    question: "The principle of centrifugation is based on the different densities of blood cells.",
+    question: "El principio de la centrifugación se basa en las diferentes densidades de las células sanguíneas.",
     correctAnswer: true,
-    explanation: "True. Density gradients allow for the orderly separation of RBCs, WBCs, and platelets when subjected to centrifugal force."
+    explanation: "Verdadero. Los gradientes de densidad permiten la separación ordenada de glóbulos rojos, glóbulos blancos y plaquetas cuando se someten a la fuerza centrífuga."
   },
   {
     id: 33,
     type: 'true-false',
-    question: "Platelets are smaller and less dense than red blood cells.",
+    question: "Las plaquetas son más pequeñas y menos densas que los glóbulos rojos.",
     correctAnswer: true,
-    explanation: "True. This difference in size and density is what allows them to remain in the upper plasma layer during controlled centrifugation."
+    explanation: "Verdadero. Esta diferencia de tamaño y densidad es lo que les permite permanecer en la capa superior del plasma durante la centrifugación controlada."
   },
   {
     id: 34,
     type: 'true-false',
-    question: "Gentle lymphatic drainage can be a beneficial post-treatment recommendation in some protocols.",
+    question: "El drenaje linfático suave puede ser una recomendación beneficiosa post-tratamiento en algunos protocolos.",
     correctAnswer: true,
-    explanation: "True. Gentle drainage can help resolve post-procedural edema (swelling) more quickly by assisting the lymphatic system."
+    explanation: "Verdadero. El drenaje suave puede ayudar a resolver el edema (hinchazón) post-procedimiento más rápidamente al asistir al sistema linfático."
   },
   {
     id: 35,
     type: 'true-false',
-    question: "The presence of a high concentration of red blood cells in PRP is a sign of superior quality.",
+    question: "La presencia de una alta concentración de glóbulos rojos en el PRP es un signo de calidad superior.",
     correctAnswer: false,
-    explanation: "False. High-quality PRP should have a very low concentration of RBCs; excessive RBCs are considered a contaminant that increases inflammation."
+    explanation: "Falso. El PRP de alta calidad debe tener una concentración muy baja de glóbulos rojos; el exceso de eritrocitos se considera un contaminante que aumenta la inflamación."
   },
   {
     id: 36,
     type: 'true-false',
-    question: "Platelet-Poor Plasma (PPP) contains the same concentration of growth factors as Platelet-Rich Plasma (PRP).",
+    question: "El Plasma Pobre en Plaquetas (PPP) contiene la misma concentración de factores de crecimiento que el Plasma Rico en Plaquetas (PRP).",
     correctAnswer: false,
-    explanation: "False. By definition, PPP has a much lower concentration of platelets and, consequently, fewer growth factors than PRP."
+    explanation: "Falso. Por definición, el PPP tiene una concentración mucho menor de plaquetas y, en consecuencia, menos factores de crecimiento que el PRP."
   },
   {
     id: 37,
     type: 'true-false',
-    question: "All materials used in the blood draw and centrifugation must be sterile and for single use.",
+    question: "Todo el material utilizado en la extracción de sangre y la centrifugación debe ser estéril y de un solo uso.",
     correctAnswer: true,
-    explanation: "True. This is a critical biosecurity standard to ensure the procedure is safe and free from contamination."
+    explanation: "Verdadero. Este es un estándar de bioseguridad crítico para garantizar que el procedimiento sea seguro y esté libre de contaminación."
   },
   {
     id: 38,
     type: 'true-false',
-    question: "A coagulated blood sample is ideal for obtaining the highest concentration of liquid PRP.",
+    question: "Una muestra de sangre coagulada es ideal para obtener la mayor concentración de PRP líquido.",
     correctAnswer: false,
-    explanation: "False. Once blood coagulates, the platelets are trapped in the clot and cannot be extracted into the plasma for injection."
+    explanation: "Falso. Una vez que la sangre se coagula, las plaquetas quedan atrapadas en el coágulo y no se pueden extraer al plasma para su inyección."
   },
   {
     id: 39,
     type: 'true-false',
-    question: "Proper identification of the patient's tubes is a mandatory practice to avoid cross-contamination errors.",
+    question: "La identificación adecuada de los tubos del paciente es una práctica obligatoria para evitar errores de contaminación cruzada.",
     correctAnswer: true,
-    explanation: "True. Labeling is essential in any clinical procedure involving biological samples to prevent administrative or medical errors."
+    explanation: "Verdadero. El etiquetado es esencial en cualquier procedimiento clínico que involucre muestras biológicas para prevenir errores administrativos o médicos."
   },
   {
     id: 40,
     type: 'true-false',
-    question: "Centrifugation protocols (time and RPM) should be modified randomly by the operator during each session.",
+    question: "Los protocolos de centrifugación (tiempo y RPM) deben ser modificados aleatoriamente por el operador durante cada sesión.",
     correctAnswer: false,
-    explanation: "False. Protocols should be standardized and based on the specific equipment and kit used to ensure consistent platelet concentration and quality."
+    explanation: "Falso. Los protocolos deben ser estandarizados y basarse en el equipo y kit específicos utilizados para garantizar una concentración y calidad de plaquetas constantes."
   }
 ];
